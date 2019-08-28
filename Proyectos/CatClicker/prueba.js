@@ -1,6 +1,10 @@
-
+let counter = 0;
 
 var elem = document.getElementById('gatito');
+if(elem){
+  elem.addEventListener('click', false);
+}
 elem.addEventListener('click', function(){
-  //the element has been clicked... do stuff here
+  counter++;
+  document.getElementById('clicks').innerHTML = counter;
 }, false);
